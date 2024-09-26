@@ -9,13 +9,14 @@ from qgis.gui import QgsMapToolIdentify
 from qgis.PyQt.QtCore import Qt, QTimer, QSize
 
 PLUGIN_NAME = "SAPO DESCRICAO"
+MENU = "SAPO"
 
 class PluginName:
     def __init__(self, iface):
         self.iface = iface
         self.plugin_dir = os.path.dirname(__file__)
         self.actions = []
-        self.menu = self.tr(f'&{PLUGIN_NAME}')
+        self.menu = self.tr(f'&{MENU}')
         self.toolbar = self.iface.addToolBar(PLUGIN_NAME)
         self.toolbar.setObjectName(PLUGIN_NAME)
 
@@ -52,7 +53,7 @@ class PluginName:
 
     def unload(self):
         for action in self.actions:
-            self.iface.removePluginMenu(self.tr(f'&{PLUGIN_NAME}'), action)
+            self.iface.removePluginMenu(self.tr(f'&{MENU}'), action)
             self.iface.removeToolBarIcon(action)
         del self.toolbar
 
