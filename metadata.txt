@@ -1,9 +1,9 @@
 [general]
-name=SAPO DESENVOLVIMENTO
+name=SAPO Descrição GPS
 description=Sistem de Apoio A Produção - Operador (Reambulador Descrição GPS)
 about=Sistem de Apoio A Produção - Operador (Reambulador Descrição GPS)
 version=1.0
 qgisMinimumVersion=3.0
 author=Barra 13
 email=mbsj2007@hotmail.com
-repository=https://github.com/m4rc05-34t15t4/sapo_reambulador
+repository=https://github.com/m4rc05-34t15t4/sapo_descriao_gps
